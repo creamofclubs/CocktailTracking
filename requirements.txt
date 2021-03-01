@@ -1,0 +1,7 @@
+pandas
+requests
+BS4
+streamlit
+
+
+ 
