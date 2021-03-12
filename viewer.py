@@ -67,11 +67,13 @@ if option == 'Tools':
         total_alc = v1+v2+v3+v4+v5
         
         total_vol = c1vol + c2vol + c3vol + c4vol + c5vol
-    
-        results = round(total_alc,2) /total_vol
-        r = round((results * 100),2)
-        st.write(f'Total Volume {total_vol}ml and total alcohol {total_alc}ml')
-        st.write(f'ABV of all Alcohol Content is {r}%')
+        try:
+            results = round(total_alc,2) /total_vol
+            r = round((results * 100),2)
+            st.write(f'Total Volume {total_vol}ml and total alcohol {total_alc}ml')
+            st.write(f'ABV of all Alcohol Content is {r}%')
+        except ZeroDivisionError:
+            pass
         
 
    
