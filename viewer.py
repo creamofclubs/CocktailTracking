@@ -46,7 +46,7 @@ if option == 'Tools':
     if tools == 'Spirit ABV':
         st.header('Cocktail Tools')
         st.subheader('Spirit ABV')
-        st.write("This will calculate the ABV, of all alcoholic content. For example 35ml of vodka @ 37% and 30ml and  kahlua 30 ml @ 25%")
+        st.write("This will calculate the ABV, of all alcoholic content. For example 35ml of vodka @ 37% and 30ml and  kahlua @ 20%")
         col1, col2 ,col3= st.beta_columns(3)
         c1vol = col1.number_input('R1 volume ml',0)
         c1abv = col2.number_input('R1 ABV')
