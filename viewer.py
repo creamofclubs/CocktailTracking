@@ -14,9 +14,9 @@ if option == 'Tools':
         st.header('Cocktail Tools')
         st.subheader('Alcohol Dilution test')
 
-        alc_volume = st.number_input('Enter volume of Alcohol in ml, ie: Spirits and Liqueurs')
-        abv = st.number_input('Enter ABV')
-        nonalc_volume = st.number_input('Enter volume of non alcohol items, ie: Juices and syrups')
+        alc_volume = st.number_input('Enter volume of Alcohol in ml, ie: Spirits and Liqueurs',0)
+        abv = st.number_input('Enter ABV. ie 35 will equal 35%',0.0)
+        nonalc_volume = st.number_input('Enter volume of non alcohol items, ie: Juices and syrups',0)
         iceselect = st.selectbox('Select your ice option.',('No Ice', 'Shaken','Stired','Whip Shaken','Lightly Shaken'),index=1)
         if iceselect == 'No Ice':
             ice = 0
