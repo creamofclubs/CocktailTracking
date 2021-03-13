@@ -13,7 +13,7 @@ if option == 'Tools':
     if tools == 'Alcohol Dilution':
         st.header('Cocktail Tools')
         st.subheader('Alcohol Dilution test')
-
+        st.write('If you dont know the total alcohol ABV, please use the Spirit ABV tool. ')
         alc_volume = st.number_input('Enter volume of Alcohol in ml, ie: Spirits and Liqueurs',0)
         abv = st.number_input('Enter ABV. ie 35 will equal 35%',0.0)
         nonalc_volume = st.number_input('Enter volume of non alcohol items, ie: Juices and syrups',0)
@@ -82,4 +82,5 @@ if option == 'Tools':
 
 if option == 'Bargin Grab':
     st.header('Bargin Grab')
+    st.subheader('Coming soon')
     stores = st.sidebar.selectbox('Select your store',('Drink Stuff', 'Tesco'))
